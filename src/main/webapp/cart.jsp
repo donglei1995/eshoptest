@@ -19,9 +19,9 @@
     <td width="20">&nbsp;</td>
     <TD height="50" align="right" valign="bottom">
 		<IMG src="images/icon_login.gif" align=absMiddle> 
-		<INPUT id="qKey" name="qKey" value="ÉÌÆ·¹Ø¼ü×Ö" onClick="this.value=''"> 
+		<INPUT id="qKey" name="qKey" value="ï¿½ï¿½Æ·ï¿½Ø¼ï¿½ï¿½ï¿½" onClick="this.value=''"> 
 		<SELECT id="category" name="category">
-			<option value="0">ËùÓÐÉÌÆ·</option>
+			<option value="0">ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ·</option>
 		</SELECT>
 		<A href="javascript:QuickSearch()"><IMG src="images/icon_search.gif" align="absMiddle" border="0"></A>    </TD>
     <td width="20">&nbsp;</td>
@@ -53,7 +53,7 @@
   </tr>
   
   <tr height="600">
-ÔÝÎ´¿ª·¢      
+ï¿½ï¿½Î´ï¿½ï¿½ï¿½ï¿½      
   </tr>
   
   <tr>
@@ -68,8 +68,9 @@
     <td>&nbsp;</td>
   </tr>
 </table>
+
 <script language="javascript">
-	//¹¹ÔìÉÌÆ··ÖÀàÏÂÀ­ÁÐ±í
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½
 	jsonrpc = new JSONRpcClient("JSON-RPC");
 	var result = jsonrpc.ajax.getCategory();
 	for (var i=0;i<result.length;i++){
@@ -79,15 +80,15 @@
 		document.all.category.options.add(option);
 	}
 	
-	//ËÑË÷ÉÌÆ·
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ·
 	function QuickSearch(){
 		var url = "mer.do?method=searchMer&cateid="+document.all.category.value;
 		var key = document.all.qKey.value;
-		if (key !=null && key!="ÉÌÆ·¹Ø¼ü×Ö" && key.length>0)url = url+"&key="+key;
+		if (key !=null && key!="ï¿½ï¿½Æ·ï¿½Ø¼ï¿½ï¿½ï¿½" && key.length>0)url = url+"&key="+key;
 		window.location = url;
 	}
 	
-	//ÐÞ¸ÄÑ¡¹ºÊýÁ¿
+	//ï¿½Þ¸ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	function modiNum(selid,newNum){
 		if (jsonrpc.ajax.modiCart(selid,newNum)){
 			var oldMoney = document.getElementById("money"+selid).innerText;
@@ -102,25 +103,25 @@
 		}
 	}
 	
-	//É¾³ýÑ¡¹º¼ÇÂ¼
+	//É¾ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½Â¼
 	function delCart(selid){
 		var url = "cart.do?method=delCart&id="+selid;
 		window.location = url;
 	}
 	
-	//Çå¿Õ¹ºÎï³µ
+	//ï¿½ï¿½Õ¹ï¿½ï¿½ï³µ
 	function clearCart(){
 		var url = "cart.do?method=clearCart";
 		window.location = url;
 	}
 	
-	//¼ÌÐø¹ºÎï
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	function continueBuy(){
 		var url = "mer.do?method=searchMer&cateid=0";
 		window.location = url;
 	}
 
-	//½øÈëÏÂÒ»²½
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½
 	function next(){
 		var url = "cart.do?method=checkOrder";
 		window.location = url;
