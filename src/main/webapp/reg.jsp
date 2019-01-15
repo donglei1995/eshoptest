@@ -18,9 +18,9 @@
     <td width="20">&nbsp;</td>
     <TD height="50" align="right" valign="bottom">
 		<IMG src="images/icon_login.gif" align=absMiddle> 
-		<INPUT id="qKey" name="qKey" value="илф╥╧ь╪Эвж" onClick="this.value=''"> 
+		<INPUT id="qKey" name="qKey" value="О©╫О©╫ф╥О©╫ь╪О©╫О©╫О©╫" onClick="this.value=''"> 
 		<SELECT id="category" name="category">
-			<option value="0">кЫспилф╥</option>
+			<option value="0">О©╫О©╫О©╫О©╫О©╫О©╫ф╥</option>
 		</SELECT>
 		<A href="javascript:QuickSearch()"><IMG src="images/icon_search.gif" align="absMiddle" border="0"></A>
     </TD>
@@ -66,39 +66,40 @@
 			<td height="80" colspan="2"><IMG src="images/icon_regster.gif"></td>
 			</tr>
 		  <tr bgcolor="#F7F3F7">
-			<td width="260" height="26" class="text" align="right"><bean:message key="member.level"/>ё╨</td>
+			<td width="260" height="26" class="text" align="right"><bean:message key="member.level"/>О©╫О©╫</td>
 			<td height="26"><html:select property="memberlevel"/></td>
+			<td>(Ф╣▀Х╞∙Х╢╕Е▐╥Г■╗Ф┬╥Е░█О╪ ggg Е╞├Г═│ggg)</td>
 		  </tr>
 		  <tr bgcolor="#F7F3F7">
-			<td width="260" height="26" class="text" align="right"><bean:message key="member.realname"/>ё╨</td>
+			<td width="260" height="26" class="text" align="right"><bean:message key="member.realname"/>О©╫О©╫</td>
 			<td height="26"><html:text property="memberName" size="30" styleClass="textBox"/></td>
 		  </tr>
 		  <tr bgcolor="#F7F3F7">
-			<td width="260" height="26" class="text" align="right"><bean:message key="member.login.name"/>ё╨</td>
+			<td width="260" height="26" class="text" align="right"><bean:message key="member.login.name"/>О©╫О©╫</td>
 			<td height="26"><html:text property="loginName" size="30" styleClass="textBox" onblur="checkLoginName()"/></td>
 		  </tr>
 		  <tr bgcolor="#F7F3F7">
-			<td width="260" height="26" class="text" align="right"><bean:message key="member.login.pwd"/>ё╨</td>
+			<td width="260" height="26" class="text" align="right"><bean:message key="member.login.pwd"/>О©╫О©╫</td>
 			<td height="26"><html:password property="loginPwd" size="30" styleClass="textBox"/></td>
 		  </tr>
 		  <tr bgcolor="#F7F3F7">
-			<td width="260" height="26" class="text" align="right"><bean:message key="member.login.repwd"/>ё╨</td>
+			<td width="260" height="26" class="text" align="right"><bean:message key="member.login.repwd"/>О©╫О©╫</td>
 			<td height="26"><input type="password" id="reLoginPwd" size="30" class="textBox" onblur="checkPwd()"/></td>
 		  </tr>
 		  <tr bgcolor="#F7F3F7">
-			<td width="260" height="26" class="text" align="right"><bean:message key="member.phone"/>ё╨</td>
+			<td width="260" height="26" class="text" align="right"><bean:message key="member.phone"/>О©╫О©╫</td>
 			<td height="26"><html:text property="phone" size="30" styleClass="textBox"/></td>
 		  </tr>
 		  <tr bgcolor="#F7F3F7">
-			<td width="260" height="26" class="text" align="right"><bean:message key="member.address"/>ё╨</td>
+			<td width="260" height="26" class="text" align="right"><bean:message key="member.address"/>О©╫О©╫</td>
 			<td height="26"><html:text property="address" size="30" styleClass="textBox"/></td>
 		  </tr>
 		  <tr bgcolor="#F7F3F7">
-			<td width="260" height="26" class="text" align="right"><bean:message key="member.zip"/>ё╨</td>
+			<td width="260" height="26" class="text" align="right"><bean:message key="member.zip"/>О©╫О©╫</td>
 			<td height="26"><html:text property="zip" size="30" styleClass="textBox"/></td>
 		  </tr>
 		  <tr bgcolor="#F7F3F7">
-			<td width="260" height="26" class="text" align="right"><bean:message key="member.email"/>ё╨</td>
+			<td width="260" height="26" class="text" align="right"><bean:message key="member.email"/>О©╫О©╫</td>
 			<td height="26"><html:text property="email" size="30" styleClass="textBox"/></td>
 		  </tr>
 		  <tr>
@@ -132,7 +133,7 @@
   </tr>
 </table>
 <script language="javascript">
-	//╧╧тЛилф╥╥жюЮобю╜ап╠М
+	//О©╫О©╫О©╫О©╫О©╫О©╫ф╥О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫п╠О©╫
 	jsonrpc = new JSONRpcClient("JSON-RPC");
 	var result = jsonrpc.ajax.getCategory();
 	for (var i=0;i<result.length;i++){
@@ -142,7 +143,7 @@
 		document.all.category.options.add(option);
 	}
 	
-	//╧╧тЛ╩Ат╠╪╤╠Побю╜ап╠М
+	//О©╫О©╫О©╫О©╫О©╫т╠О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫п╠О©╫
 	result = jsonrpc.ajax.getMemberLevel();
 	for (var i=0;i<result.length;i++){
 		option =document.createElement("OPTION");
@@ -151,30 +152,30 @@
 		document.all.memberlevel.options.add(option);
 	}
 	
-	//цэбК╨к╤т
+	//О©╫О©╫О©╫О©╫к╤О©╫
 	function checkPwd(){
 		if (document.all.loginPwd.value != document.all.reLoginPwd.value){
-			alert('╤т╡╩фПё╛а╫╢нйДхК╣дцэбК╡╩р╩жбё╛гКжьпбйДхКё║');
+			alert('О©╫т╡О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫К╡╩р╩О©╫бёО©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫Кё║');
 			document.all.loginPwd.value = "";
 			document.all.reLoginPwd.value ="";
 			document.all.loginPwd.focus();
 		}
 	}
 	
-	//╣гб╪уй╨еспп╖пт╪Л╡И
+	//О©╫О©╫б╪О©╫й╨О©╫О©╫О©╫п╖О©╫т╪О©╫О©╫
 	function checkLoginName(){
 		var lname = document.all.loginName.value;
 		if ((lname !=null)&&(lname.length>0)&&(!jsonrpc.ajax.chkLoginName(lname))){
-			alert('╤т╡╩фПё╛╦ц╣гб╪уй╨еря╠╩у╪сцё╛гКжьпбйДхКё║');
+			alert('О©╫т╡О©╫О©╫Пё╛╦ц╣О©╫б╪О©╫й╨О©╫О©╫я╠О©╫у╪О©╫цёО©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫Кё║');
 			document.all.loginName.focus();
 		}
 	}	
 	
-	//кякВилф╥
+	//О©╫О©╫О©╫О©╫О©╫О©╫ф╥
 	function QuickSearch(){
 		var url = "mer.do?method=searchMer&cateid="+document.all.category.value;
 		var key = document.all.qKey.value;
-		if (key !=null && key!="илф╥╧ь╪Эвж" && key.length>0)url = url+"&key="+key;
+		if (key !=null && key!="О©╫О©╫ф╥О©╫ь╪О©╫О©╫О©╫" && key.length>0)url = url+"&key="+key;
 		window.location = url;
 	}
 </script>	
