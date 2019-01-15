@@ -65,10 +65,10 @@
 		  <tr>
 			<td height="80" colspan="2"><IMG src="images/icon_regster.gif"></td>
 			</tr>
+			<tr>(测试账号用户名：ggg 密码ggg)</tr>
 		  <tr bgcolor="#F7F3F7">
 			<td width="260" height="26" class="text" align="right"><bean:message key="member.level"/>��</td>
 			<td height="26"><html:select property="memberlevel"/></td>
-			<td>(测试账号用户名：ggg 密码ggg)</td>
 		  </tr>
 		  <tr bgcolor="#F7F3F7">
 			<td width="260" height="26" class="text" align="right"><bean:message key="member.realname"/>��</td>
