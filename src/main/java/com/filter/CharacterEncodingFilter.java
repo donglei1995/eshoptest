@@ -9,30 +9,30 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
-/** ±àÂë¹ıÂËÆ÷ */
+/** ç¼–ç è¿‡æ»¤å™¨    */
 public class CharacterEncodingFilter implements Filter {
 
 	String encoding = null;
 	FilterConfig filterConfig = null;
 	
-	/** ³õÊ¼»¯·½·¨ */
+	/** åˆå§‹åŒ–æ–¹æ³• */
 	public void init(FilterConfig filterConfig) throws ServletException {
 		this.filterConfig = filterConfig;
 		this.encoding = filterConfig.getInitParameter("encoding");
 	}
 
-	/** ¹ıÂË´¦Àí·½·¨ */
+	/** è¿‡æ»¤å¤„ç†æ–¹æ³•  */
 	public void doFilter(ServletRequest request, ServletResponse response,
 			FilterChain chain) throws IOException, ServletException {
 		if (encoding!=null){
-			//¶ÔÇëÇó½øĞĞ±àÂëÉèÖÃ
+			//å¯¹è¯·æ±‚è¿›è¡Œç¼–ç è®¾ç½®
 			request.setCharacterEncoding(encoding);
 		}
-		//½«´¦ÀíÈ¨×ª½»¸øÏÂÒ»¸ö´¦ÀíÆ÷
+		//   å°†å¤„ç†æƒè½¬äº¤ç»™ä¸‹ä¸€ä¸ªå¤„ç†å™¨
 		chain.doFilter(request,response);
 	}
 
-	/** Ïú»Ù·½·¨ */
+	/** é”€æ¯æ–¹æ³• */
 	public void destroy() {
 		this.encoding = null;
 		this.filterConfig = null;

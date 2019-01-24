@@ -4,18 +4,18 @@ import com.ORM.*;
 import java.util.*;
 
 public interface OrderService {
-	/** ĞÂÔö¶©µ¥ */	
+	/** æ–°å¢è®¢å•  */	
 	public boolean addOrder(Orders order) throws Exception;
-	/** ä¯ÀÀÄ³»áÔ±µÄËùÓĞ¶©µ¥ */
+	/** æµè§ˆæŸä¼šå‘˜çš„æ‰€æœ‰è®¢å• */
 	public List browseOrder(Member member) throws Exception;
-	/** ä¯ÀÀËùÓĞ¶©µ¥ */
+	/** æµè§ˆæ‰€æœ‰è®¢å• */
 	public List browseOrder() throws Exception;
-	/** ä¯ÀÀÄ³¶©µ¥µÄËùÓĞÉÌÆ·¼ÇÂ¼ */
+	/** æµè§ˆæŸè®¢å•çš„æ‰€æœ‰å•†å“è®°å½• */
 	public List browseOrderMer(Cart cart) throws Exception;			
-	/** É¾³ı¶©µ¥ */	
+	/** åˆ é™¤è®¢å•  */	
 	public boolean delOrder(Integer id) throws Exception;	
-	/** ×°ÔØ¶©µ¥ */	
+	/** è£…è½½è®¢å•  */	
 	public Orders loadOrder(Integer id) throws Exception;
-	/** ĞŞ¸Ä¶©µ¥ */	
+	/** ä¿®æ”¹è®¢å•  */	
 	public boolean updateOrder(Orders order) throws Exception;
 }
