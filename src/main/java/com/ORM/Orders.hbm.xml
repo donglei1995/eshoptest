@@ -20,7 +20,7 @@
             <column name="OrderStatus" />
         </property>
         
-        <!--映射Orders到Member的多对一关联-->
+        <!--映射Orders到Member的多对一关联   -->
         <many-to-one name="member"
         			 column="Member"
         			 class="com.ORM.Member"
