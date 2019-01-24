@@ -153,7 +153,7 @@
   <tr>
     <td>&nbsp;</td>
     <td height="30" bgcolor="#4282CE" class="whiteText" align="center">
-		<bean:message key="website.foot"/>	</td>
+		<!--   <bean:message key="website.foot"/> -->	</td>
     <td>&nbsp;</td>
   </tr>
   <tr>
